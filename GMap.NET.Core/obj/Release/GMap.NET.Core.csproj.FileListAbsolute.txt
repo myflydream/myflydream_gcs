@@ -1,0 +1,15 @@
+D:\GCS_0603\GCS\GMap.NET.Core\bin\Release\GMap.NET.Core.dll
+D:\GCS_0603\GCS\GMap.NET.Core\bin\Release\GMap.NET.Core.XML
+D:\GCS_0603\GCS\GMap.NET.Core\bin\Release\System.Data.SqlServerCe.dll
+D:\GCS_0603\GCS\GMap.NET.Core\obj\Release\GMap.NET.Properties.Resources.resources
+D:\GCS_0603\GCS\GMap.NET.Core\obj\Release\GMap.NET.Core.csproj.GenerateResource.Cache
+D:\GCS_0603\GCS\GMap.NET.Core\obj\Release\GMap.NET.Core.dll
+D:\GCS_0603\GCS\SpaceArrow\bin\Release\GMap.NET.Core.dll
+D:\GCS_0603\GCS\SpaceArrow\bin\Release\GMap.NET.Core.XML
+D:\GCS_0603\GCS\GMap.NET.Core\obj\Release\GMap.NET.Core.csprojResolveAssemblyReference.cache
+C:\Dev\GCS\SpaceArrow\bin\Release\GMap.NET.Core.dll
+C:\Dev\GCS\SpaceArrow\bin\Release\GMap.NET.Core.XML
+C:\Dev\GCS\GMap.NET.Core\obj\Release\GMap.NET.Core.csprojResolveAssemblyReference.cache
+C:\Dev\GCS\GMap.NET.Core\obj\Release\GMap.NET.Properties.Resources.resources
+C:\Dev\GCS\GMap.NET.Core\obj\Release\GMap.NET.Core.csproj.GenerateResource.Cache
+C:\Dev\GCS\GMap.NET.Core\obj\Release\GMap.NET.Core.dll

@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D976106-98EF-4E08-A7BC-66A4C2262C54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpaceArrow</RootNamespace>
+    <AssemblyName>SpaceArrow</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Administrator\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\mpdesktop.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin, Version=16.1.14.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DMSkin, Version=0.3.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DMSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Gdu.WinFormUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Gdu.WinFormUI.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GMap.NET.Core\bin\Debug\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MAVLink, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MAVLink.dll</HintPath>
+    </Reference>
+    <Reference Include="MmTimer">
+      <HintPath>.\MmTimer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BatteryWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatteryWarning.Designer.cs">
+      <DependentUpon>BatteryWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\BatteryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\BatteryControl.Designer.cs">
+      <DependentUpon>BatteryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\customertrackbarvertical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\customertrackbarvertical.Designer.cs">
+      <DependentUpon>customertrackbarvertical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\CustomTrackBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\CustomTrackBar.Designer.cs">
+      <DependentUpon>CustomTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ImageButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ImageButton.Designer.cs">
+      <DependentUpon>ImageButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MyImageButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MyImageButton.Designer.cs">
+      <DependentUpon>MyImageButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MyVTackBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MyVTackBar.Designer.cs">
+      <DependentUpon>MyVTackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TabCon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\TabCon.Designer.cs">
+      <DependentUpon>TabCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\AltitudeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\AltitudeControl.Designer.cs">
+      <DependentUpon>AltitudeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoordinateTransformation.cs" />
+    <Compile Include="DirectInputJoy\API.cs" />
+    <Compile Include="DirectInputJoy\JoystickAPI.cs" />
+    <Compile Include="DirectInputJoy\JoystickEventArgs.cs" />
+    <Compile Include="DirectInputJoy\Joystick_P.cs" />
+    <Compile Include="DirectInputJoy\Joystick_V.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gpxtype.cs" />
+    <Compile Include="map.cs" />
+    <Compile Include="MapShow.cs" />
+    <Compile Include="MAVLink\locationwp.cs" />
+    <Compile Include="MAVLink\MavLinkHandler.cs" />
+    <Compile Include="MAVLink\MAVLink_wps.cs" />
+    <Compile Include="MAVLink\MAVState.cs" />
+    <Compile Include="Control\MaxWin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MaxWin.Designer.cs" />
+    <Compile Include="Control\NorWin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\NorWin.Designer.cs" />
+    <Compile Include="PointLatLngAlt.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressIndication\Configform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndication\Configform.Designer.cs">
+      <DependentUpon>Configform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressIndication\FilePathManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndication\FilePathManager.Designer.cs">
+      <DependentUpon>FilePathManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressIndication\IconForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndication\IconForm.Designer.cs">
+      <DependentUpon>IconForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressIndication\JoyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndication\JoyForm.Designer.cs">
+      <DependentUpon>JoyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressIndication\InsertWPNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndication\InsertWPNum.Designer.cs">
+      <DependentUpon>InsertWPNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressIndication\LoiterTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndication\LoiterTimeForm.Designer.cs">
+      <DependentUpon>LoiterTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressIndication\PlayBackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndication\PlayBackForm.Designer.cs">
+      <DependentUpon>PlayBackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressIndication\RoutePlanningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndication\RoutePlanningForm.Designer.cs">
+      <DependentUpon>RoutePlanningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressIndication\SingleWayPointInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndication\SingleWayPointInsert.Designer.cs">
+      <DependentUpon>SingleWayPointInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressIndication\UpLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndication\UpLoadForm.Designer.cs">
+      <DependentUpon>UpLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Serial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Serial.Designer.cs">
+      <DependentUpon>Serial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Serialize\GpxFileData.cs" />
+    <Compile Include="Serialize\SerializationClass.cs" />
+    <Compile Include="Serialize\SerializeDataClass.cs" />
+    <Compile Include="Serialize\SoftwareConfigurations.cs" />
+    <Compile Include="Serialize\XMLSerializer.cs" />
+    <EmbeddedResource Include="BatteryWarning.resx">
+      <DependentUpon>BatteryWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\customertrackbarvertical.resx">
+      <DependentUpon>customertrackbarvertical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\CustomTrackBar.resx">
+      <DependentUpon>CustomTrackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MyImageButton.resx">
+      <DependentUpon>MyImageButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MyVTackBar.resx">
+      <DependentUpon>MyVTackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\TabCon.resx">
+      <DependentUpon>TabCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\AltitudeControl.resx">
+      <DependentUpon>AltitudeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.en.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MaxWin.resx" />
+    <EmbeddedResource Include="Control\NorWin.resx" />
+    <EmbeddedResource Include="ProgressIndication\Configform.resx">
+      <DependentUpon>Configform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressIndication\FilePathManager.resx">
+      <DependentUpon>FilePathManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressIndication\IconForm.resx">
+      <DependentUpon>IconForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressIndication\JoyForm.resx">
+      <DependentUpon>JoyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressIndication\InsertWPNum.resx">
+      <DependentUpon>InsertWPNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressIndication\LoiterTimeForm.resx">
+      <DependentUpon>LoiterTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressIndication\PlayBackForm.resx">
+      <DependentUpon>PlayBackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressIndication\RoutePlanningForm.resx">
+      <DependentUpon>RoutePlanningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressIndication\SingleWayPointInsert.resx">
+      <DependentUpon>SingleWayPointInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressIndication\UpLoadForm.resx">
+      <DependentUpon>UpLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serial.resx">
+      <DependentUpon>Serial.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\markerdown.png" />
+    <None Include="Resources\marker.png" />
+    <None Include="Resources\mouseway.png" />
+    <None Include="Resources\444.png" />
+    <None Include="Resources\mapzoomminusdown.png" />
+    <None Include="Resources\mapzomplusdown.png" />
+    <None Include="Resources\battery_space.png" />
+    <None Include="Resources\mpdesktop.png" />
+    <None Include="Resources\plane.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\mapzoomplus.png" />
+    <None Include="Resources\mapzoomminus.png" />
+    <None Include="Resources\9y.png" />
+    <None Include="Resources\9g.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\8y.png" />
+    <None Include="Resources\8g.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\7y.png" />
+    <None Include="Resources\7g.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\6y.png" />
+    <None Include="Resources\6g.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\5y.png" />
+    <None Include="Resources\5g.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\4y.png" />
+    <None Include="Resources\4g.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\battery_low.png" />
+    <None Include="Resources\battery_full.png" />
+    <None Include="Resources\battery_80.png" />
+    <None Include="Resources\battery_40.png" />
+    <None Include="Resources\battery_20.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\Valider_yes_72px_1075671_easyicon.net.png" />
+    <None Include="Resources\Valider_yes_256px_1075671_easyicon.net.png" />
+    <None Include="Resources\Valider_yes_24px_1075671_easyicon.net.png" />
+    <None Include="Resources\12106414_153522431000_2.jpg" />
+    <None Include="Resources\number_9.png" />
+    <None Include="Resources\number_8.png" />
+    <None Include="Resources\number_7.png" />
+    <None Include="Resources\number_6.png" />
+    <None Include="Resources\number_5.png" />
+    <None Include="Resources\number_4.png" />
+    <None Include="Resources\number_3.png" />
+    <None Include="Resources\number_2.png" />
+    <None Include="Resources\number_1.png" />
+    <None Include="Resources\number_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GMap.NET.WindowsForms\GMap.NET.WindowsForms.csproj">
+      <Project>{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}</Project>
+      <Name>GMap.NET.WindowsForms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpdesktop.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

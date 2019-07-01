@@ -1,0 +1,10 @@
+2017/6/24 21:59:13	选择了地图:高德卫星地图
+2017/6/24 21:59:13	选择了地图:高德卫星地图
+2017/6/24 21:59:13	显示航迹...
+2017/6/24 22:03:46	System.IO.IOException: 端口“COM4”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 SpaceArrow.Form1.SerialPortConnect() 位置 c:\Dev\GCS\SpaceArrow\Form1.cs:行号 1934
+2017/6/24 22:11:51	GCS正常关闭...
+2017/6/24 22:11:51	GCS正常关闭...

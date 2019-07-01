@@ -1,0 +1,10 @@
+2017/11/15 14:30:18	选择了地图:高德卫星地图
+2017/11/15 14:30:18	选择了地图:高德卫星地图
+2017/11/15 14:30:18	显示航迹...
+2017/11/15 14:30:36	System.UnauthorizedAccessException: Access to the port 'COM4' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpaceArrow.Form1.SerialPortConnect() in c:\Dev\GCS\SpaceArrow\Form1.cs:line 1934
+2017/11/15 14:30:39	GCS正常关闭...
+2017/11/15 14:30:39	GCS正常关闭...

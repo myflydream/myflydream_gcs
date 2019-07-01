@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerializationClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ComPortName>COM4</ComPortName>
+  <ComBaud>38400</ComBaud>
+  <MapName>高德卫星地图</MapName>
+  <Language>en</Language>
+  <BookMark />
+  <mapCenter>
+    <Lat>23.1693223959252</Lat>
+    <Lng>113.449287414551</Lng>
+  </mapCenter>
+  <HomeLocation>
+    <Lat>23.0432144</Lat>
+    <Lng>113.4692096</Lng>
+  </HomeLocation>
+  <planeLocation>
+    <Lat>0</Lat>
+    <Lng>0</Lng>
+  </planeLocation>
+  <colorScale>
+    <a>255</a>
+    <r>255</r>
+    <g>255</g>
+    <b>224</b>
+  </colorScale>
+  <colorTargetLocation>
+    <a>255</a>
+    <r>255</r>
+    <g>255</g>
+    <b>255</b>
+  </colorTargetLocation>
+  <colorMouseLocation>
+    <a>255</a>
+    <r>255</r>
+    <g>255</g>
+    <b>255</b>
+  </colorMouseLocation>
+  <colorZoom>
+    <a>255</a>
+    <r>255</r>
+    <g>0</g>
+    <b>0</b>
+  </colorZoom>
+  <colorTrack>
+    <a>255</a>
+    <r>0</r>
+    <g>0</g>
+    <b>255</b>
+  </colorTrack>
+  <colorRoutes>
+    <a>255</a>
+    <r>255</r>
+    <g>0</g>
+    <b>0</b>
+  </colorRoutes>
+  <isIconHomeUseFile>false</isIconHomeUseFile>
+  <isIconPlaneUseFile>false</isIconPlaneUseFile>
+  <isIconWpMarkerUseFile>false</isIconWpMarkerUseFile>
+  <isIconBookMarkerUseFile>false</isIconBookMarkerUseFile>
+  <iconhome>
+    <filepath />
+    <iconwidth>0</iconwidth>
+    <iconheight>0</iconheight>
+  </iconhome>
+  <iconplane>
+    <filepath />
+    <iconwidth>0</iconwidth>
+    <iconheight>0</iconheight>
+  </iconplane>
+  <iconwpmarker>
+    <filepath />
+    <iconwidth>0</iconwidth>
+    <iconheight>0</iconheight>
+  </iconwpmarker>
+  <iconbookmarker>
+    <filepath />
+    <iconwidth>0</iconwidth>
+    <iconheight>0</iconheight>
+  </iconbookmarker>
+</SerializationClass>
